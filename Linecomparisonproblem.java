@@ -9,9 +9,16 @@ package lineproblem;
 		}
 public static void main(String[] args) {
 	Linecomparisonproblem Object = new Linecomparisonproblem();
-	Double line1 = Object.length(7,9,5,6);
-	Double line2 = Object.length(2,8,4,3);
-	System.out.println("line1 and line2 are equal :" +line1.equals(line2));
+	Double line1 = Object.length(1,6,1,5);
+	Double line2 = Object.length(2,4,2,3);
+	{
+	if(Double.compare(line1,line2) == 0)
+		System.out.println("Both the lines are Equal");
+	else if(Double.compare(line1,line2) < 0)
+		System.out.println("line2 is greater than line 1");
+	else
+		System.out.println("line 1 is greater than line 2 ");
+	}
 	}
 		
 		
